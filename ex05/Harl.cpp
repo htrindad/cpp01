@@ -6,7 +6,7 @@
 /*   By: htrindad <htrindad@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 16:54:30 by htrindad          #+#    #+#             */
-/*   Updated: 2025/08/30 17:56:43 by htrindad         ###   ########.fr       */
+/*   Updated: 2025/08/30 18:02:42 by htrindad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,7 @@ void Harl::complain(std::string level)
 	{
 		if (level == levels[i])
 		{
-			while (i < 4)
-			{
-				std::cout << "[ " << levels[i] << " ]\n";
-				(this->*funcs[i++])();
-				std::cout << '\n';
-			}
+			(this->*funcs[i++])();
 			return ;
 		}
 	}
