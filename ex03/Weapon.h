@@ -6,7 +6,7 @@
 /*   By: htrindad <htrindad@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 14:06:57 by htrindad          #+#    #+#             */
-/*   Updated: 2025/08/30 14:45:19 by htrindad         ###   ########.fr       */
+/*   Updated: 2025/08/30 15:01:56 by htrindad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Weapon
 		Weapon();
 		~Weapon();
 		Weapon(std::string type);
-		const std::string &getType();
+		const std::string &getType() const;
 		void setType(std::string);
 };
 #endif
