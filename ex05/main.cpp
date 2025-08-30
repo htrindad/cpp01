@@ -6,19 +6,17 @@
 /*   By: htrindad <htrindad@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:17:04 by htrindad          #+#    #+#             */
-/*   Updated: 2025/08/30 17:47:58 by htrindad         ###   ########.fr       */
+/*   Updated: 2025/08/30 17:50:34 by htrindad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.h"
 
-int main()
+int main(int ac, char **av)
 {
 	Harl harl;
 
-	harl.complain("DEBUG");
-	harl.complain("WARNING");
-	harl.complain("ERROR");
-	harl.complain("INFO");
+	if (ac == 2)
+		harl.complain(av[1]);
 	return 0;
 }
