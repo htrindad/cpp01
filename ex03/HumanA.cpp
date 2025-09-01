@@ -6,18 +6,14 @@
 /*   By: htrindad <htrindad@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 14:19:09 by htrindad          #+#    #+#             */
-/*   Updated: 2025/09/01 16:01:25 by htrindad         ###   ########.fr       */
+/*   Updated: 2025/09/01 16:12:20 by htrindad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.h"
 
 //CnD
-HumanA::HumanA(std::string name, Weapon weapon)
-{
-	this._weapon = weapon;
-	setName(name);
-}
+HumanA::HumanA(std::string name, Weapon &weapon) : _weapon(weapon), _name(name) {};
 HumanA::~HumanA() {};
 
 //Methods
