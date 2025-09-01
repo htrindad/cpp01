@@ -6,7 +6,7 @@
 /*   By: htrindad <htrindad@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 14:35:26 by htrindad          #+#    #+#             */
-/*   Updated: 2025/09/01 16:17:30 by htrindad         ###   ########.fr       */
+/*   Updated: 2025/09/01 16:33:10 by htrindad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ void HumanB::attack()
 }
 
 void HumanB::setName(std::string name) { _name = name; }
-void HumanB::setWeapon(Weapon weapon) { _weapon = &weapon; }
+void HumanB::setWeapon(Weapon &weapon) { _weapon = &weapon; }
 const Weapon *HumanB::getWeapon() { return _weapon; }
 const std::string HumanB::getName() { return _name; }
